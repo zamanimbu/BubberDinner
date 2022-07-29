@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubberDinner.Api", "BubberDinner.Api\BubberDinner.Api.csproj", "{00AAF020-DF65-4BB6-ACB8-ECA2111C9115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubberDinner.Api", "BubberDinner.Api\BubberDinner.Api.csproj", "{00AAF020-DF65-4BB6-ACB8-ECA2111C9115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubberDinner.Contracts", "BubberDinner.Contracts\BubberDinner.Contracts.csproj", "{B2A04A13-76AA-4B87-96C4-8BE476EACCD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubberDinner.Contracts", "BubberDinner.Contracts\BubberDinner.Contracts.csproj", "{B2A04A13-76AA-4B87-96C4-8BE476EACCD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{7A7CD317-0BB3-41E5-98E1-AD3A182B5AE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfratructureLayer", "InfratructureLayer", "{C10C168E-458C-4F7D-93C2-CB784DCAA23C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubberDinner.Infrastructure", "BubberDinner.Infrastructure\BubberDinner.Infrastructure.csproj", "{5F93B719-9259-45DD-98AE-957182270255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubberDinner.Infrastructure", "BubberDinner.Infrastructure\BubberDinner.Infrastructure.csproj", "{5F93B719-9259-45DD-98AE-957182270255}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationLayer", "ApplicationLayer", "{9FCC50F8-2142-4F26-AD72-BE3336F2366A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubberDinner.Application", "BubberDinner.ApplicationLayer\BubberDinner.Application.csproj", "{8A3DF482-7893-4285-9478-96BDDAA8DEFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{5F93B719-9259-45DD-98AE-957182270255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F93B719-9259-45DD-98AE-957182270255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F93B719-9259-45DD-98AE-957182270255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3DF482-7893-4285-9478-96BDDAA8DEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3DF482-7893-4285-9478-96BDDAA8DEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3DF482-7893-4285-9478-96BDDAA8DEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3DF482-7893-4285-9478-96BDDAA8DEFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +47,7 @@ Global
 		{00AAF020-DF65-4BB6-ACB8-ECA2111C9115} = {7A7CD317-0BB3-41E5-98E1-AD3A182B5AE0}
 		{B2A04A13-76AA-4B87-96C4-8BE476EACCD0} = {7A7CD317-0BB3-41E5-98E1-AD3A182B5AE0}
 		{5F93B719-9259-45DD-98AE-957182270255} = {C10C168E-458C-4F7D-93C2-CB784DCAA23C}
+		{8A3DF482-7893-4285-9478-96BDDAA8DEFF} = {9FCC50F8-2142-4F26-AD72-BE3336F2366A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAFDE608-1509-4C11-B8B4-D13E55B08E20}
