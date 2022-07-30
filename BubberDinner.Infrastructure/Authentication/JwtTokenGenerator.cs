@@ -37,11 +37,11 @@ namespace BubberDinner.Infrastructure.Authentication
            };
 
             var securityToken = new JwtSecurityToken(
-                    issuer:_jwtSettings.Issuer,
+                    issuer: _jwtSettings.Issuer,
                     audience: _jwtSettings.Audiance,
-                    expires:_dateTimeProvider.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes),
-                    claims:claims,
-                    signingCredentials:signingCredentials);
+                    expires: _dateTimeProvider.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes),
+                    claims: claims,
+                    signingCredentials: signingCredentials);
 
             return new JwtSecurityTokenHandler().WriteToken(securityToken);
         }
