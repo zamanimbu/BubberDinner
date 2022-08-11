@@ -34,13 +34,10 @@ namespace BubberDinner.Application.Services.Authintication
 
             _uesrRepository.Add(user);
 
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, firstName, lastName);
+            var token = _jwtTokenGenerator.GenerateToken(user);
 
             return new AuthenticationResult(
-                user.Id,
-                firstName,
-                lastName,
-                email,
+               user,
                 token);
         }
         public AuthenticationResult Login(string email, string password)
@@ -53,12 +50,9 @@ namespace BubberDinner.Application.Services.Authintication
             {
                 throw new Exception("Invalid Password");
             }
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
+            var token = _jwtTokenGenerator.GenerateToken(user);
             return new AuthenticationResult(
-                user.Id,
-                user.FirstName,
-                user.LastName,
-                email,
+                user,
                 token);
         }   
 
